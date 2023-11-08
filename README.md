@@ -9,7 +9,7 @@
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/django-logo-negative.svg">
-  <img alt="Dark and Light mode version of the Django logo" src="./assets/django-logo-positive.svg">
+  <img alt="Dark and Light mode version of the Django logo" src="./assets/django-logo-negative.svg">
 </picture>
 </div>
 
