@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load std_tags %}
+{% block content %}
+<h3>{{ msg }} </h3>
+
+
+
+{% if pnom %}
+<h4>{{pnom}}</h4>
+
+{% else %}
+<h6 class="text-danger">"pnom" Not exists</h6>
+{% endif %}
+
+
+
+<div class="m-3">
+  <form class="needs-validation" method="post" action={% url 'stdFon' %}> {% csrf_token %}
+
+    <div class="form-group m-2">
+      <input type="text" class="form-control" id="fname" aria-describedby="emailHelp" placeholder="Prenom"
+        name="prenom">
+    </div>
+    <div class="form-group m-2">
+      <input type="lname" class="form-control" id="lname" aria-describedby="emailHelp" placeholder="Nom de Famille"
+      name="lname">
+    </div>
+    <div class="form-group m-2">
+      <input type="date" class="form-control" id="nee" aria-describedby="emailHelp" placeholder="Date de Naissance">
+    </div>
+    <div class="form-group m-2">
+      <input type="tel" class="form-control" id="telephone" aria-describedby="emailHelp" placeholder="Telephone"
+        name="phone">
+    </div>
+    <div class="form-group m-2">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter email">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<div style="width: fit-content;">
+  <pre contenteditable="true">{{data}}</pre>
+</div>
+
+<script type="text/javascript" src="{% static 'js/student.js' %}">
+
+</script>
+{%endblock%}

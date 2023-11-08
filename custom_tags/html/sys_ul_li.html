@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>System Info</h2>
+<p>Windows User Name: {{user}}</p>
+<p>fullpath of this file: {{workingFilePath}}</p>
+<p>UserProfile Path of this Windows: {{userProfile}}</p>
+
+<ul>
+  {% for k,v in sysEnv %}
+  <li>
+    {{k}} : {{v}}
+  </li>
+  {% endfor %}
+</ul>
+
+
+{% endblock %}

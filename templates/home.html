@@ -1,0 +1,124 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<link rel="stylesheet" href="{%static 'css/home.css'%}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet" />
+
+<div class="cvContainer">
+  <div class="cvCont">
+    <span id="date"></span>
+    <div class="cvHeader">
+      <div class="imgCont">
+        <img class="img" id="img" src="{% static 'images/cv_3.jpg' %}" alt="" />
+      </div>
+      <div class="contactAddress">
+        <div>
+          <h4 id="nom"><strong>ABDULLAH</strong> Afif Wali</h4>
+          <div>Téléphone: <a href="tel:+33768973814">+33 7 68 97 38 14</a></div>
+          <div>
+            E-mail:
+            <a href="mailto:iti.wali@hotmail.com">iti.wali@hotmail.com</a>
+          </div>
+          <div>
+            Adresse:
+            <div>
+              &nbsp;&nbsp;
+              <a href="https://www.google.com/maps/dir//1+Pl.+Jean+Moulin,+51100+Reims/@49.2551191,4.0610354,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47e975d2eb1bae13:0x8fd9a1100e3ef440!2m2!1d4.0613404!2d49.2549455?entry=ttu"
+                target="_blank">1 Place Jean Moulin, 51100, Reims</a>
+            </div>
+          </div>
+          <div onclick="dt()">Date de Naissance: 22/04/2008</div>
+          <div>Nationalité: Français</div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="mb-5">
+      <div>
+        <h4><strong>Éducation:</strong></h4>
+      </div>
+      <div>
+        Lycée Georges Clémenceau. <br />
+        &nbsp;&nbsp; 46 avenue Georges Clemenceau,51096,Reims
+      </div>
+      <div>Diplôme préparé: Bac général, technologique et professionnel</div>
+      <div>Année d'obtention prévue: 2025</div>
+      <div>Matières préférées: Mathématiques, Informatique</div>
+      <div>
+        Projets notables: Participation au club de programmation, réalisation de
+        mini-sites en HTML/CSS et Javascript
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <div>
+        <h4><strong>Compétences Techniques:</strong></h4>
+        <ul>
+          <li>Langages de Programmation: HTML, CSS, Python</li>
+          <li>Frameworks: Django</li>
+          <li>Bibliothèques: Numpy, Pandas</li>
+          <li>Programmation Orientée Objet (POO)</li>
+          <li>Conception et développement de sites web simples en HTML/CSS</li>
+          <li>Création d'applications web avec Django</li>
+          <li>Manipulation de données avec Numpy et Pandas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <h4>Expérience: Projet Personnel</h4>
+      - Site Web de Blog Date: Juin, 2023
+      <div><strong>Description:</strong></div>
+      Conception et développement d'un site web de blog personnel en utilisant
+      HTML et CSS. Personnalisation de la mise en page, des couleurs et des
+      polices. Publication d'articles sur des sujets variés.
+    </div>
+
+    <div class="mb-5">
+      <h4>Projets Scolaires</h4>
+      - Applications Python Date: 2023
+      <div><strong>Description:</strong></div>
+      Réalisation de plusieurs projets Python mettant en œuvre des concepts de
+      la programmation orientée objet (POO). Création d'une application de
+      gestion d'une bibliothèque et d'un système de réservation de places de
+      cinéma.
+    </div>
+
+    <div class="mb-5">
+      <h4>Cours en Ligne</h4>
+      - Apprentissage de Django et Numpy/Pandas Date: 2023
+      <div><strong>Description:</strong></div>
+      Suivi de cours en ligne pour approfondir mes compétences en programmation
+      web avec le framework Django. Apprentissage de la création de vues, de
+      modèles et de formulaires pour les applications web. Maîtrise des
+      bibliothèques Numpy et Pandas pour l'analyse et la manipulation de
+      données.
+    </div>
+
+    <div class="mb-5">
+      <h4>Centres d'Intérêt:</h4>
+      <ul>
+        <li>Programmation et développement web</li>
+        <li>Exploration de nouvelles technologies</li>
+        <li>Lecture d'articles techniques et de blogs</li>
+        <li>Résolution d'énigmes mathématiques</li>
+        <li>Engagement bénévole dans des projets informatiques</li>
+      </ul>
+    </div>
+
+    <div class="mb-5">
+      <h4>Langues:</h4>
+      <ul>
+        <li>Français (Langue Maternelle)</li>
+        <li>Anglais (Niveau Intermédiaire)</li>
+      </ul>
+    </div>
+
+    <div><strong>Références: Disponibles sur demande.</strong></div>
+  </div>
+</div>
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

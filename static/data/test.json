@@ -1,0 +1,272 @@
+[
+  {
+    "sn": "2555GJ26",
+    "login": {
+      "username": "paddlebuck",
+      "pass": "AM/fd!E%wA~zbgm8",
+      "email": "bernice@hotmail.com"
+    },
+    "title": "Master",
+    "fname": "Norma",
+    "lname": "Hildring",
+    "photo": "https://randomuser.me/api/portraits/men/87.jpg",
+    "orders": [
+      {
+        "ord_sn": "oid_6173AG44",
+        "product": [
+          {
+            "prod_sn": "prid_5047SQ29",
+            "product": "Rank Tough",
+            "productBrand": "McDonald's"
+          },
+          {
+            "prod_sn": "prid_9210SS45",
+            "product": "Zamtip",
+            "productBrand": "Adobe"
+          },
+          {
+            "prod_sn": "prid_9768YP46",
+            "product": "U-lux",
+            "productBrand": "Chevrolet"
+          }
+        ],
+        "orderType": "couch",
+        "amount": 309
+      },
+      {
+        "ord_sn": "oid_9228FN06",
+        "product": [
+          {
+            "prod_sn": "prid_7529WV28",
+            "product": "Isdox",
+            "productBrand": "BMW"
+          },
+          {
+            "prod_sn": "prid_3817ZB86",
+            "product": "Kinhold",
+            "productBrand": "Wells Fargo"
+          },
+          {
+            "prod_sn": "prid_1743QA85",
+            "product": "Rank Joyla",
+            "productBrand": "Gillette"
+          }
+        ],
+        "orderType": "door",
+        "amount": 369
+      },
+      {
+        "ord_sn": "oid_0847SU15",
+        "product": [
+          {
+            "prod_sn": "prid_7439QQ77",
+            "product": "It Lex",
+            "productBrand": "Telecom"
+          },
+          {
+            "prod_sn": "prid_0743MA58",
+            "product": "Kinlab",
+            "productBrand": "Corona"
+          },
+          {
+            "prod_sn": "prid_5637VQ77",
+            "product": "Is Lux",
+            "productBrand": "Costco"
+          }
+        ],
+        "orderType": "twezzers",
+        "amount": 354
+      },
+      {
+        "ord_sn": "oid_5777FO06",
+        "product": [
+          {
+            "prod_sn": "prid_4867JP49",
+            "product": "Dalttom",
+            "productBrand": "Sony"
+          },
+          {
+            "prod_sn": "prid_0481JY89",
+            "product": "Kinlab",
+            "productBrand": "Automotive"
+          },
+          {
+            "prod_sn": "prid_8324WA87",
+            "product": "Vilatough",
+            "productBrand": "Wells Fargo"
+          }
+        ],
+        "orderType": "leg warmers",
+        "amount": 463
+      }
+    ],
+    "phones": {
+      "home": "828-77009",
+      "mobile": "01648-19053236"
+    },
+    "address": {
+      "personal": {
+        "street": "Bacon Terrace",
+        "city": "Rosario",
+        "pcode": 60658,
+        "country": "Virgin Islands (U.S.)"
+      },
+      "work": {
+        "workplace": "Bioholding Inc.",
+        "jobtitle": "Teacher Assistant",
+        "street": "Birchbrook Avenue",
+        "city": "Changshu",
+        "pcode": 16654,
+        "country": "Peru",
+        "workPhone": "861-22025"
+      }
+    },
+    "about": [
+      "coast",
+      "toy",
+      "productive",
+      "fascinated",
+      "daughter",
+      "ticket",
+      "befitting",
+      "terrific"
+    ],
+    "customId": "custId-3117CA15-kn",
+    "special": "This value will be returns as is."
+  },
+  {
+    "sn": "6446DI63",
+    "login": {
+      "username": "loanstud",
+      "pass": "KiMrf!Aj+*/s!91G",
+      "email": "morgan.knoch@mail.com"
+    },
+    "title": "Madam",
+    "fname": "Blythe",
+    "lname": "Sayyed",
+    "photo": "https://randomuser.me/api/portraits/men/67.jpg",
+    "orders": [
+      {
+        "ord_sn": "oid_5075RN55",
+        "product": [
+          {
+            "prod_sn": "prid_9146HE59",
+            "product": "K-home",
+            "productBrand": "Bank of America"
+          },
+          {
+            "prod_sn": "prid_6506AK49",
+            "product": "Triofresh",
+            "productBrand": "Apple"
+          },
+          {
+            "prod_sn": "prid_9001OJ90",
+            "product": "Goldencof",
+            "productBrand": "Pampers"
+          }
+        ],
+        "orderType": "floor",
+        "amount": 383
+      },
+      {
+        "ord_sn": "oid_1592PL09",
+        "product": [
+          {
+            "prod_sn": "prid_8979OW36",
+            "product": "Tres Sing",
+            "productBrand": "Uniqlo"
+          },
+          {
+            "prod_sn": "prid_2784BM58",
+            "product": "Lam Hotwarm",
+            "productBrand": "Siemens"
+          },
+          {
+            "prod_sn": "prid_1939WB94",
+            "product": "Villa-Flex",
+            "productBrand": "Facebook"
+          }
+        ],
+        "orderType": "lamp shade",
+        "amount": 301
+      },
+      {
+        "ord_sn": "oid_4051DQ91",
+        "product": [
+          {
+            "prod_sn": "prid_2490MK21",
+            "product": "Tripplestock",
+            "productBrand": "Microsoft"
+          },
+          {
+            "prod_sn": "prid_6109KP66",
+            "product": "K-lax",
+            "productBrand": "Sony"
+          },
+          {
+            "prod_sn": "prid_1577ZD24",
+            "product": "Dongtrax",
+            "productBrand": "Telecom"
+          }
+        ],
+        "orderType": "sticky note",
+        "amount": 454
+      },
+      {
+        "ord_sn": "oid_5456VB64",
+        "product": [
+          {
+            "prod_sn": "prid_0071OQ30",
+            "product": "Joyron",
+            "productBrand": "Budweiser"
+          },
+          {
+            "prod_sn": "prid_2079WG15",
+            "product": "Tran Lux",
+            "productBrand": "BMW"
+          },
+          {
+            "prod_sn": "prid_5614RQ85",
+            "product": "Bionix",
+            "productBrand": "Fox"
+          }
+        ],
+        "orderType": "food",
+        "amount": 389
+      }
+    ],
+    "phones": {
+      "home": "663-30885",
+      "mobile": "01554-12208030"
+    },
+    "address": {
+      "personal": {
+        "street": "Irish Court",
+        "city": "Nay Pyi Taw",
+        "pcode": 85096,
+        "country": "Madagascar"
+      },
+      "work": {
+        "workplace": "Rantouch and Partners",
+        "jobtitle": "Podiatrist",
+        "street": "Mayo Court",
+        "city": "Hamhung",
+        "pcode": 37223,
+        "country": "Western Sahara",
+        "workPhone": "820-13035"
+      }
+    },
+    "about": [
+      "injure",
+      "mountainous",
+      "wine",
+      "naive",
+      "smoke",
+      "noiseless",
+      "quixotic",
+      "sense"
+    ],
+    "customId": "custId-7444IB56-by",
+    "special": "This value will be returns as is."
+  }
+]

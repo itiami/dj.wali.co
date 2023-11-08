@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% load nfun %}
+<link rel="stylesheet" href="{% static 'css/calc.css' %} ">
+<h4>the calculator function is based on Django code as below..</h4>
+
+<div>
+  <pre>
+    def funbased_view_1(request:HttpResponse):
+      data = jfn()
+      my_fn3("https://randomuser.me/api/portraits/men/02.jpg")
+      resp = render(   
+              request,          
+              "calculator/customTag.html",
+              {
+                  "msg": "Custom Template",
+                  "data": data
+              }
+          )
+      print(resp.status_code)
+      return resp
+  </pre>
+</div>
+
+<button id="btn" onclick="test()">Click Me!!</button>
+
+<!-- <div class="calculator">
+  <input type="text" class="calculator__output" id="output" autofocus>
+  <div class="calculator__keys">
+    <button id="+" class="calculator__key calculator__key--operator" onclick="val('+')" value="+" >+</button>
+    <button id="-" class="calculator__key calculator__key--operator" onclick="val('-')" value="+" >-</button>
+    <button id="*" class="calculator__key calculator__key--operator" onclick="val('*')" value="*" >&times;</button>
+    <button id="/" class="calculator__key calculator__key--operator" onclick="val('/')" value="÷" >÷</button>
+    <button id="7" class="calculator__key" onclick="val('7')" value="7" >7</button>
+    <button id="8" class="calculator__key" onclick="val('8')" value="8" >8</button>
+    <button id="9" class="calculator__key" onclick="val('9')" value="9" >9</button>
+    <button id="4" class="calculator__key" onclick="val('4')" value="4" >4</button>
+    <button id="5" class="calculator__key" onclick="val('5')" value="5" >5</button>
+    <button id="6" class="calculator__key" onclick="val('6')" value="6" >6</button>
+    <button id="1" class="calculator__key" onclick="val('1')" value="1" >1</button>
+    <button id="2" class="calculator__key" onclick="val('2')" value="2" >2</button>
+    <button id="3" class="calculator__key" onclick="val('3')" value="3" >3</button>
+    <button id="0" class="calculator__key" onclick="val('0')" value="0" >0</button>
+    <button id="." class="calculator__key" onclick="val('.')" value="." >.</button>
+    <button id="AC" class="calculator__key" onclick="clearOut()">AC</button>
+    <button onclick="myFunction()" class="calculator__key calculator__key--enter">=</button>
+  </div>
+</div> -->
+
+
+<div class="calculator">
+  <input type="text" class="calculator__output" id="output" autofocus>
+  <div class="calculator__keys">
+    {% for x in opt %}
+    <button id={{ x }} value={{x}} class="calculator__key--operator">{{ x }}</button>
+    {% endfor%}
+
+    {% for x in num %}
+    <button id={{ x }} class=" calculator__key" onclick="val('{{ x }}')" value={{x}}>
+      {{ x }}
+    </button>
+    {% endfor%}
+
+    <button id="." class="calculator__key" onclick="val('.')">.</button>
+    <button id="AC" class="calculator__key" onclick="clearOut()">AC</button>
+    <button onclick="myFunction()" class="calculator__key calculator__key--enter">=</button>
+  </div>
+</div>
+
+
+<!-- <div class="ndiv">
+  <div class="ncalc">
+    <div class="ncalc_out">
+      <input class="" id="output" type="text" name="display">
+    </div>
+    <div class="ncalc_operator">
+      <button class="myButton" data-action="add"> + </button>
+      <button class="myButton" data-action="subract"> - </button>
+      <button class="myButton" data-action="multi"> &times; </button>
+      <button class="myButton" data-action="divide"> ÷ </button>
+    </div>
+    <div class="ncalc_body">
+      <div class="ncalc_num">
+        {% for x in num %}
+        <button id={{ x }} class="myButton" onclick="display.value = val('{{ x }}')">
+          {{ x }}
+        </button>
+        {% endfor%}
+        <button class="myButton" data-action="decimal">&#x2022;</button>
+        <button class="myButton" data-action="clear">AC</button>
+      </div>
+      <div class="ncalc_submit">
+        <button onclick="myFunction()" class="myButton">=</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+{% endblock %}

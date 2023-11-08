@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/content.css' %}">
+<div class="p-2">
+    <h4>{{title}}</h4>
+    {{pipeDataSingleRow}}
+    <div class="table-responsive-sm p-2">
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    {% for x in col %}
+                    <th class="align-middle" scope="col">COL_{{x}}</th>
+                    {% endfor %}
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for idx, value in pipeData.iterrows %}
+                <tr>
+
+                    <td class="align-middle">{{idx}}</td>
+                    <td class="align-middle">{{value.0}}</td>
+                    <td class="align-middle">{{value.1}}</td>
+                    <td class="align-middle">{{value.2}}</td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+
+</div>
+{% endblock content %}

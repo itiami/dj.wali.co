@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load std_tags %}
+{% block content %}
+<h3>Fonction Name: {{FonctionName}} </h3>
+
+
+<div class="m-3">
+  <form class="needs-validation" method="post" action={% url 'insAddr' %}> {% csrf_token %}
+
+    
+    {% for x in inpList %}
+    <div class="form-group m-2">
+      <input type="text" class="form-control" id={{x}} placeholder={{x}} name={{x}}>
+    </div>
+    {% endfor %}
+      
+
+      
+
+    <!-- <div class="form-group m-2">
+      <input type="text" class="form-control" id="fname" placeholder="Numero de Rue"
+        name="streetNo">
+    </div>
+    <div class="form-group m-2">
+      <input type="lname" class="form-control" id="lname" placeholder="Post Code" name="postCode">
+    </div>
+
+    <div class="form-group m-2">
+      <input type="tel" class="form-control" id="city" placeholder="City"  name="city">
+    </div>
+    <div class="form-group m-2">
+      <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="country" name="country">
+    </div> -->
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<div style="width: fit-content;">
+  
+  <pre>{{data}}</pre>
+    
+</div>
+
+<script type="text/javascript" src="{% static 'js/student.js' %}">
+
+</script>
+{%endblock%}

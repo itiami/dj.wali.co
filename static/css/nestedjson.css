@@ -1,0 +1,22 @@
+.execTime{
+    color: blue;
+}
+
+.tblContent{
+    border: 1px solid burlywood;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+
+@media only screen and (max-width: 600px) {
+    table {
+      background-color: lightblue;
+    }
+
+    table thead tr th{
+        display: none;
+    }
+  }

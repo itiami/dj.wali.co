@@ -1,0 +1,110 @@
+{% load static %}
+{% load business_logic %}
+{% block header %}
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-1 shadow-sm">
+  <div class="container">
+    <img src="{%static 'images/desi_soft.png'%}" alt="" width="35px">
+    <a href="{% url 'home' %}" class="navbar-brand font-weight-bold">Wali Soft</a>
+    <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
+      aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div id="navbarContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <!-- Level one dropdown -->
+        <li class="nav-item dropdown">
+          <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            class="nav-link dropdown-toggle">Pages</a>
+          <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
+            <li><a href="{% url 'home' %}" class="dropdown-item">Home</a></li>
+
+            <!-- DSA page with sub pages -->
+            <li class="dropdown-submenu">
+              <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" class="dropdown-item dropdown-toggle">Algorithms</a>
+              <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                <li><a href="{% url 'dsa' %}" class="dropdown-item">Standard Math</a></li>
+                <li><a href="{% url 'dsa_jsForm' %}" class="dropdown-item">Django With JS</a></li>
+              </ul>
+            </li>
+
+            <!-- calculator page with sub pages -->
+            <li class="dropdown-submenu">
+              <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" class="dropdown-item dropdown-toggle">Calculator App</a>
+              <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                <li><a href="{% url 'calc' %}" class="dropdown-item">Calculatrice</a></li>
+                <li><a href="{% url 'calc2nd' %}" class="dropdown-item">customTags</a></li>
+              </ul>
+            </li>
+
+
+            <!-- Student page with sub pages -->
+            <li class="dropdown-submenu">
+              <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" class="dropdown-item dropdown-toggle">Student Management</a>
+              <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                <li><a href="{% url 'StdHome' %}" class="dropdown-item">Std Home</a></li>
+                <li><a href="{% url 'stdFon' %}" class="dropdown-item">Std Fon</a></li>
+              </ul>
+            </li>
+
+            <!-- Address page with sub pages -->
+            <li class="dropdown-submenu">
+              <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" class="dropdown-item dropdown-toggle">Address Management</a>
+              <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                <li><a href="{% url 'getAddr' %}" class="dropdown-item">Address mgmt</a></li>
+              </ul>
+            </li>
+
+            <!-- <li class="dropdown-divider"></li> -->
+
+            <!-- Level two dropdown-->
+            <li class="dropdown-submenu">
+              <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" class="dropdown-item dropdown-toggle">Tutorials</a>
+              <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                <li>
+                  <a tabindex="-1" href="{% url 'nested_json' %}" class="dropdown-item">NestedJson</a>
+                </li>
+
+                <!-- Level three dropdown-->
+                <li class="dropdown-submenu">
+                  <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" class="dropdown-item dropdown-toggle">Custom_Tags</a>
+                  <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a href="{% url 'ul_li' %}" class="dropdown-item">SysInfo as Unsorted List</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'render_data_tbl' %}" class="dropdown-item">SysInfo In Table</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'ul_li' %}" class="dropdown-item">SysInfo as List</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Level three -->
+
+                <li><a href="{% url 'list_data' %}" class="dropdown-item">List Variables</a></li>
+                <li><a href="{% url 'dsa_pipeFile' %}" class="dropdown-item">Pipe Delimited  Files</a></li>
+                <li><a href="{% url 'dsa_numpy_1' %}" class="dropdown-item">Numpy Tuto_1</a></li>
+              </ul>
+            </li>
+            <!-- End Level two -->
+          </ul>
+        </li>
+        <!-- End Level one -->
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        <li class="nav-item "><a class="nav-link" href="/admin">Admin Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{% endblock %}

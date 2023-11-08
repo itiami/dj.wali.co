@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load customFn %}
+
+<div class="border border-primary mt-2 p-2">
+  {% getLst as lst %}
+  {% for x in lst %}
+  <div>  {{x}}</div>
+  {% endfor %}
+    
+</div>
+
+
+<div class="border border-primary mt-2 p-2">
+  <h6>Persing a data list from a Function</h6>
+  <pre>{{ dataList }}</pre>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>Index</th>
+        <th>Data From List</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for dt in dataList %}
+      <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ dt }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
+<div class="border border-danger mt-2 p-2">
+  <h6>The List is Taken from above, but converted to json index as key</h6>
+  <pre>{{ toJsonObjList }}</pre>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>Key</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for dt in loadFromJsonObjList %}
+      <tr>
+        <td>{{ dt.sn }}</td>
+        <td>{{ dt.itm }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
+<div class="border border-success mt-2 p-2">
+  <h3>Rendering Json Object List</h3>
+  <pre>{{ jsonObj }}</pre>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for dt in jsonListFn %}
+      <tr>
+        <td>{{ dt.name }}</td>
+        <td>{{ dt.price }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

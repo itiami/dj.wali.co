@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/nestedjson.css' %}">
+{% load customFn %}
+<h5>Total Execution Time: <strong>{{end}} sec</strong></h5>
+
+<!-- index.html -->
+<div>
+  using annotation @register.filter : {{ 12|substruction:7 }}
+</div>
+
+<div>
+  using annotation @register.simple_tag : {% multi 4 5 %}
+</div>
+
+<div>
+  {% with x=4 y=5 %}
+  {% multi x y as res %}
+  using annotation @register.simple_tag dans le block with: {{ res }}
+  {% endwith %}
+</div>
+
+<div>
+  <span>using annotation @register.simple_tag dans le block with avec if else: </span>
+  {% with x=4 y=3 %}
+  <div>
+    {% if y > x %}
+    <div>
+      {% division y x as res %}
+      <span>Division: {{ res }}</span>
+    </div>
+    {% else %}
+    <div>
+      {% multi x y as res %}
+      <span>Multiplication: {{ res }}</span>
+    </div>
+    {% endif %}
+  </div>
+  {% endwith %}
+</div>
+
+
+
+<div class="table-responsive-sm p-2">
+  <h6>Persing a data Nested Json file in static/data/nestedJsonFile.json</h6>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th class="align-middle" scope="col">SN</th>
+        <th class="align-middle" scope="col">Email</th>
+        <th class="align-middle" scope="col">Nom & Prenom</th>
+        <th class="align-middle" scope="col">Photo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- parenthèse bouclée {} -->
+      {% for dt in dataList %}
+      <tr>
+        <td class="align-middle">{{ dt.sn }}</td>
+        <td class="align-middle">
+          <a href="mailto:" {{ dt.login.email }}>
+            {{ dt.login.email }}
+          </a>
+        </td>
+        <td class="align-middle">{{ dt.fname }}
+          <strong>
+            {{ dt.lname | upper }}
+          </strong>
+        </td>
+        <td>
+          <img width="85px" src={{dt.photo}} alt="" onerror="this.src='{{img}}'">
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h5>Total Execution Time: <strong>{{end}} sec</strong></h5>
+{% endblock %}

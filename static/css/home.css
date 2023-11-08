@@ -1,0 +1,68 @@
+.cvContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cvCont {
+  max-width: 780px;
+}
+
+.cvHeader {
+  font-family: "Neucha", cursive;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cvCont h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Neucha", cursive;
+}
+
+.contactAddress {
+  align-self: center;
+  position: sticky;
+}
+
+.cvCont img {
+  width: 350px;
+}
+
+#date {
+  display: flex;
+  justify-content: right;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cvCont {
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+
+  .cvHeader {
+    font-family: "Neucha", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .contactAddress {
+    align-self: center;
+  }
+
+  .cvCont img {
+    width: 300px;
+  }
+
+  .smScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

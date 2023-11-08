@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/content.css' %}">
+<div>
+    <h4>Data Structures and Algorithms in Python</h4>
+    <div>
+        {% for x in data %}
+        <p>{{x}}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

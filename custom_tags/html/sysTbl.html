@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table class="table table-bordered">
+  <thead class="table-dark">
+
+    <tr>
+      <th class="col">SN</th>
+      <th class="col">Key</th>
+      <th class="col">Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for k,v in sysEnv %}
+    <tr>
+      <td>{{forloop.counter}} </td>
+      <td>{{ k | center:"15"}} </td>
+      <td>{{ v }} </td>
+      {% endfor %}
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

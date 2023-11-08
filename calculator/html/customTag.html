@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load nfun %}
+
+
+{% block content %}
+
+<h6>{{msg}}</h6>
+<div class="border border-primary mt-2 p-2">
+  <h5>avec le mot-clé .filter</h5>
+  <div>{{ 5 | my_fn:8 }}</div>
+</div>
+
+<div class="border border-primary mt-2 p-2">
+  <h6>
+    Avec mot-clé .simple_tag - nous devons passer la logique à l'intérieur du bloc with avec pourcentage symble i.g.
+  </h6>
+
+  {% with a=4 b=5 %}
+  {% my_fn2 a b as res %}
+  <div>{{ res }}</div>
+  {% endwith %}
+</div>
+
+
+
+<div class="border border-primary mt-2 p-2">
+  <string>Using</string>
+  <samp>@register.simple_tag</samp>
+  <string>Annotation</string>
+  <h6>Nested Json</h6>
+
+  {% for x in data %}
+
+  <span>
+    <img width="45px" src={{ x.photo }} alt="">
+  </span>
+
+  {% endfor %}
+</div>
+
+
+{% endblock %}
